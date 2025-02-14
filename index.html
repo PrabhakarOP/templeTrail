@@ -7,6 +7,7 @@
     <title>Temple Trail</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link href="style/homePageStyle.css" rel="stylesheet" />
+    <link href="style/popupStyle.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -18,8 +19,8 @@
         </div>
         <div class="nav-right">
             <ul class="nav-list">
-                <li>City</li>
-                <li>Deity</li>
+                <li><button onclick="openPopup()">City</button></li>
+                <li><button>Deity</button></li>
             </ul>
         </div>
     </nav>
@@ -172,10 +173,33 @@
             </div>
         </section>
     </main>
+
+    <div class="overlay" id="popupOverlay">
+        <div class="popup">
+            <h2>City List</h2>
+            <ul>
+                <li>Patna</li>
+                <li>Bhuwneshwar</li>
+                <li>Dwarka</li>
+                <li>Konark</li>
+            </ul>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
     <footer>
         <h1>TempleTrail.com</h1>
         <p>Made with love <i class="ri-heart-fill"></i> By Prabhakar</p>
     </footer>
+
+    <script>
+        function openPopup() {
+            document.getElementById('popupOverlay').classList.add('show');
+        }
+        function closePopup() {
+            document.getElementById('popupOverlay').classList.remove('show');
+        }
+    </script>
 </body>
 
 </html>
