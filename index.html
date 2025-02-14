@@ -7,7 +7,8 @@
     <title>Temple Trail</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link href="style/homePageStyle.css" rel="stylesheet" />
-    <link href="style/popupStyle.css" rel="stylesheet"/>
+    <link href="style/popupStyle.css" rel="stylesheet" />
+    <link href="style/responsiveStyle.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -23,30 +24,35 @@
                 <li><button onclick="openPopup('popupOverlayDeity')">Deity</button></li>
             </ul>
         </div>
+
+        <div class="menu">
+            <i class="ri-menu-line"></i>
+        </div>
     </nav>
 
     <main>
         <div class="carousel-container">
-
-            <div class="carousel">
-                <div class="carousel-img">
-                    <img src="asset/somnath-carousel.jpg" alt="somnath temple">
+            <a>
+                <div class="carousel">
+                    <div class="carousel-img">
+                        <img src="asset/somnath-carousel.jpg" alt="somnath temple">
+                    </div>
+                    <div class="carousel-data">
+                        <div class="city">
+                            <h3>City</h3>
+                            <p>Somnath</p>
+                        </div>
+                        <div class="temple-name">
+                            <h3>Temple Name</h3>
+                            <p>Somnath</p>
+                        </div>
+                        <div class="deity">
+                            <h3>Deity</h3>
+                            <p>Shiva</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-data">
-                    <div class="city">
-                        <h3>City</h3>
-                        <p>Somnath</p>
-                    </div>
-                    <div class="temple-name">
-                        <h3>Temple Name</h3>
-                        <p>Somnath</p>
-                    </div>
-                    <div class="deity">
-                        <h3>Deity</h3>
-                        <p>Shiva</p>
-                    </div>
-                </div>
-            </div>
+            </a>
 
             <a href="templeInfoPage/sanchiStupa.html">
                 <div class="carousel">
@@ -92,28 +98,28 @@
                 </div>
             </a>
 
-            
 
-            <div class="carousel">
-                <div class="carousel-img">
-                    <img src="asset/sun-temple-carousel1.jpg" alt="sun temple">
+            <a>
+                <div class="carousel">
+                    <div class="carousel-img">
+                        <img src="asset/sun-temple-carousel1.jpg" alt="sun temple">
+                    </div>
+                    <div class="carousel-data">
+                        <div class="city">
+                            <h3>City</h3>
+                            <p>Konark</p>
+                        </div>
+                        <div class="temple-name">
+                            <h3>Temple Name</h3>
+                            <p>Sun Temple</p>
+                        </div>
+                        <div class="deity">
+                            <h3>Deity</h3>
+                            <p>Sun</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-data">
-                    <div class="city">
-                        <h3>City</h3>
-                        <p>Konark</p>
-                    </div>
-                    <div class="temple-name">
-                        <h3>Temple Name</h3>
-                        <p>Sun Temple</p>
-                    </div>
-                    <div class="deity">
-                        <h3>Deity</h3>
-                        <p>Sun</p>
-                    </div>
-                </div>
-            </div>
-
+            </a>
 
 
         </div>
@@ -180,7 +186,9 @@
         <div class="popup">
             <h2>City List</h2>
             <ul>
-                <a href="city.html"><li>Patna</li></a>
+                <a href="city.html">
+                    <li>Patna</li>
+                </a>
                 <li>Bhuwneshwar</li>
                 <li>Dwarka</li>
                 <li>Konark</li>

@@ -19,14 +19,12 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* position: sticky; */
 
     height: 7vh;
     width: 100%;
     min-height: fit-content;
     
     background-color: burlywood;
-    /* color: orangered; */
     color: rgb(57, 41, 21);
 
 
@@ -49,10 +47,11 @@ main{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 5vw;
-    justify-content: center;
 
     padding: 30px 10vw 30px 10vw;
 }
+
+
 
 section {
     display: flex;
@@ -67,6 +66,8 @@ section > h1 , section > h2{
 
 section > div{
     width: 100%;
+    min-width: 100px;
+    max-width: 500px;
     text-align: justify;
     border-radius: 10px;
 
@@ -80,13 +81,14 @@ section > div{
     align-items: center;
     gap: 10px;
 
+    overflow: hidden;
     box-shadow: 0 0 20px black;
 }
 
 
 section img{
-    /* max-height: 360px; */
     max-width: 500px;
+    min-width: 0;
     aspect-ratio: 3/2;
 
     border-radius: 10%;
@@ -94,7 +96,12 @@ section img{
 }
 
 .gallery > img{
+    max-width: 100%;
     box-shadow: 0 0 20px black;
+}
+
+section ul {
+    padding-right: 40px;
 }
 
 li{

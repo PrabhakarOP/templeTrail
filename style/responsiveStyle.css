@@ -1,0 +1,46 @@
+/* *********** HomePage ************* */
+
+.menu{
+    display: none;
+}
+
+@media (max-width:768px) {
+    .nav-mid ,.nav-right {
+        display: none;
+    }
+
+    nav{
+        padding: 10px;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .carousel{
+        margin-left: 10px;
+    }
+
+    .carousel-container {
+        padding-right: 10px;
+    }
+
+    .carousel-data .city , .carousel-data .deity{
+        display: none;
+    }
+
+    .container {
+        padding-left: 10px;
+    }
+}
+
+
+/* ************ Temple Info Page ************* */
+
+@media (max-width:768px) {
+    
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+}

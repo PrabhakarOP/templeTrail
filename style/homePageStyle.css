@@ -13,6 +13,7 @@ html,body{
 a{
     text-decoration: none;
     color: unset;
+    margin: 0;
 }
 
 nav{
@@ -41,23 +42,30 @@ nav{
     margin-left: 10px;
 }
 
+.menu {
+    display: none;
+}
+
 /* ********************* Main ******************* */
 main{
     background-image: url(../asset/temple-background.jpg);
     color: white;
 }
 
+/* **************** Carousel *************** */
+
 .carousel-container{
     display: flex;    
     overflow: auto;
     scrollbar-width: none;
+    padding-right: 5rem;
 }
 .carousel{
     margin-left: 5rem;
 }
-.carousel:last-of-type{
+/* .carousel:last-of-type{
     margin-right: 5rem;
-}
+} */
 
 .carousel-img{
     height: 40vh;
@@ -92,12 +100,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-around;
-
 }
-
-/* .carousel-data > div{
-    height: 10vh;
-} */
 
 .carousel-data > div{
     height: 10vh;
@@ -107,16 +110,18 @@ main{
     padding: 0 20px 0 20px;
     border-radius: 3%;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-.carousel-data p{
-    margin-top: 10px;
-}
 
 /*  ********* ******* Section ****** ********* */
 
 section{
-    /* padding-left: 5rem; */
     text-align: center;
 }
 
@@ -183,55 +188,5 @@ footer{
 
 
 
-/* ************************************ Pop-Up *************************************** */
+/* ************** Media Query **************** */
 
-/* .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(8px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-.popup {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    width: 300px;
-    text-align: center;
-}
-.popup ul {
-    list-style: none;
-    padding: 0;
-}
-.popup ul li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
-.popup ul li:last-child {
-    border-bottom: none;
-}
-.popup button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    border: none;
-    background: #007BFF;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.popup button:hover {
-    background: #0056b3;
-}
-.show {
-    visibility: visible;
-    opacity: 1;
-} */
