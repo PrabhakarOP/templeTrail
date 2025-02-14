@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Trail</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style/city.css">
+    <link rel="stylesheet" href="style/popupStyle.css" >
+</head>
+
+<body>
+    <nav>
+        <h1 class="nav-left"><a href="index.html">Temple Trail</a></h1>
+        <div class="nav-mid">
+            <input type="search">
+            <button><i class="ri-search-eye-line"></i></button>
+        </div>
+        
+        <div class="nav-right">
+            <ul class="nav-list">
+                <li><button onclick="openPopup('popupOverlayCity')">City</button></li>
+                <li><button onclick="openPopup('popupOverlayDeity')">Deity</button></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <h1>Temples In <b>Patna</b></h1>
+        <div class="container">
+            <div class="item">
+                <img src="asset/patna/mahavir-mandir-patna.webp">
+                <p>Mahavir Mandir</p>
+            </div>
+
+            <div class="item">
+                <img src="asset/patna/patan-devi.webp">
+                <p>Patan Devi Mandir</p>
+            </div>
+
+            <div class="item">
+                <img src="asset/patna/jalla-hanuman-mandir.webp">
+                <p>Jalla Hanuman Mandir</p>
+            </div>
+
+        </div>
+        
+
+    </main>
+
+    <div class="overlay" id="popupOverlayCity">
+        <div class="popup">
+            <h2>City List</h2>
+            <ul>
+                <li>Patna</li>
+                <li>Bhuwneshwar</li>
+                <li>Dwarka</li>
+                <li>Konark</li>
+            </ul>
+            <button onclick="closePopup('popupOverlayCity')">Close</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="popupOverlayDeity">
+        <div class="popup">
+            <h2>Deity List</h2>
+            <ul>
+                <li>Shiva</li>
+                <li>Vishnu</li>
+                <li>Hanuman</li>
+                <li>Krishna</li>
+            </ul>
+            <button onclick="closePopup('popupOverlayDeity')">Close</button>
+        </div>
+    </div>
+
+    <footer>
+        <h1>TempleTrail.com</h1>
+        <p>Made with love <i class="ri-heart-fill"></i> By Prabhakar</p>
+    </footer>
+
+    <script>
+        function openPopup(id) {
+            document.getElementById(id).classList.add('show');
+        }
+        function closePopup(id) {
+            document.getElementById(id).classList.remove('show');
+        }
+    </script>
+</body>
+
+</html>
