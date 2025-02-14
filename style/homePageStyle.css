@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  Arial, Helvetica, sans-serif;
+    
+}
+
+html,body{
+    height: 100%;
+    width: 100%
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: sticky; */
+
+    height: 7vh;
+    width: 100%;
+    min-height: fit-content;
+    
+    background-color: burlywood;
+    /* color: orangered; */
+    color: rgb(57, 41, 21);
+
+
+    padding: 10px 5rem 10px 5rem;
+    border-bottom: 3px solid rgb(89, 41, 41);
+
+}
+
+
+.nav-list>li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* ********************* Main ******************* */
+main{
+    background-image: url(../asset/temple-background.jpg);
+    color: white;
+}
+
+.carousel-container{
+    display: flex;    
+    overflow: auto;
+    scrollbar-width: none;
+}
+.carousel{
+    margin-left: 5rem;
+}
+.carousel:last-of-type{
+    margin-right: 5rem;
+}
+
+.carousel-img{
+    height: 40vh;
+    width: 80vw;
+    max-width: 1233px;
+    background-color: orangered;
+    margin-top: 5vh;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px black;
+    object-fit: fill;
+}
+
+.carousel-img img{
+    height: 40vh;
+    width: 80vw;
+    max-width: 1233px;
+
+    aspect-ratio: 16/9;
+}
+
+.carousel-data{
+    height: 15vh;
+    width: 60vw;
+    background-color: rgb(222, 164, 89);
+    margin: 0 auto 0 auto;
+    border-radius: 40px;
+    position: relative;
+    bottom: 5vh;
+    box-shadow: 0px 0px 30px black;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+/* .carousel-data > div{
+    height: 10vh;
+} */
+
+.carousel-data > div{
+    height: 10vh;
+
+    border-left: 5px solid orangered;
+    border-right: 5px solid orangered;
+    padding: 0 20px 0 20px;
+    border-radius: 3%;
+    text-align: center;
+}
+
+.carousel-data p{
+    margin-top: 10px;
+}
+
+/*  ********* ******* Section ****** ********* */
+
+section{
+    /* padding-left: 5rem; */
+    text-align: center;
+}
+
+section  h2{
+
+    width: 80vw;
+    margin: 20px auto 10px auto;
+    background: transparent;
+    padding-top: 20px;
+    border-top: 3px solid rgb(89, 41, 41);
+
+    color: black;
+    text-shadow: 2px 2px burlywood;
+    text-decoration: underlinef;
+    text-rendering: geometricPrecision;
+}
+
+
+.container{
+    display: flex;
+    gap: 5rem;    
+    overflow-x: scroll;
+    scrollbar-width: none;
+
+    padding: 40px;
+}
+
+.container .item{
+    min-width: fit-content;
+    border-radius: 40px;
+    text-align: center;
+    overflow: hidden;
+
+    background-color: burlywood;
+    box-shadow: 0px 0px 20px black;
+}
+
+.container img{
+    max-height: 360px;
+    max-width: 400px;
+    aspect-ratio: 3/2;
+}
+
+.container p{
+    font-weight: bold;
+}
+
+/* *************** Footer ************ */
+
+footer{
+    width: 100%;
+    height: 30vh;
+
+    border-top: 3px solid rgb(89, 41, 41);
+
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: burlywood;
+}
