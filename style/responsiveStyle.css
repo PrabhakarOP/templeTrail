@@ -4,6 +4,11 @@
     display: none;
 }
 
+
+main {
+    min-height: 63vh;
+}
+
 @media (max-width:768px) {
     .nav-mid ,.nav-right {
         display: none;
