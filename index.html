@@ -19,14 +19,34 @@
         </div>
         <div class="nav-right">
             <ul class="nav-list">
-                <li><button onclick="openPopup()">City</button></li>
-                <li><button>Deity</button></li>
+                <li><button onclick="openPopup('popupOverlayCity')">City</button></li>
+                <li><button onclick="openPopup('popupOverlayDeity')">Deity</button></li>
             </ul>
         </div>
     </nav>
 
     <main>
         <div class="carousel-container">
+
+            <div class="carousel">
+                <div class="carousel-img">
+                    <img src="asset/somnath-carousel.jpg" alt="somnath temple">
+                </div>
+                <div class="carousel-data">
+                    <div class="city">
+                        <h3>City</h3>
+                        <p>Somnath</p>
+                    </div>
+                    <div class="temple-name">
+                        <h3>Temple Name</h3>
+                        <p>Somnath</p>
+                    </div>
+                    <div class="deity">
+                        <h3>Deity</h3>
+                        <p>Shiva</p>
+                    </div>
+                </div>
+            </div>
 
             <a href="sanchiStupa.html">
                 <div class="carousel">
@@ -72,25 +92,7 @@
                 </div>
             </a>
 
-            <div class="carousel">
-                <div class="carousel-img">
-                    <img src="asset/somnath-carousel.jpg" alt="somnath temple">
-                </div>
-                <div class="carousel-data">
-                    <div class="city">
-                        <h3>City</h3>
-                        <p>Somnath</p>
-                    </div>
-                    <div class="temple-name">
-                        <h3>Temple Name</h3>
-                        <p>Somnath</p>
-                    </div>
-                    <div class="deity">
-                        <h3>Deity</h3>
-                        <p>Shiva</p>
-                    </div>
-                </div>
-            </div>
+            
 
             <div class="carousel">
                 <div class="carousel-img">
@@ -174,7 +176,7 @@
         </section>
     </main>
 
-    <div class="overlay" id="popupOverlay">
+    <div class="overlay" id="popupOverlayCity">
         <div class="popup">
             <h2>City List</h2>
             <ul>
@@ -183,7 +185,20 @@
                 <li>Dwarka</li>
                 <li>Konark</li>
             </ul>
-            <button onclick="closePopup()">Close</button>
+            <button onclick="closePopup('popupOverlayCity')">Close</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="popupOverlayDeity">
+        <div class="popup">
+            <h2>Deity List</h2>
+            <ul>
+                <li>Shiva</li>
+                <li>Vishnu</li>
+                <li>Hanuman</li>
+                <li>Krishna</li>
+            </ul>
+            <button onclick="closePopup('popupOverlayDeity')">Close</button>
         </div>
     </div>
 
@@ -193,11 +208,11 @@
     </footer>
 
     <script>
-        function openPopup() {
-            document.getElementById('popupOverlay').classList.add('show');
+        function openPopup(id) {
+            document.getElementById(id).classList.add('show');
         }
-        function closePopup() {
-            document.getElementById('popupOverlay').classList.remove('show');
+        function closePopup(id) {
+            document.getElementById(id).classList.remove('show');
         }
     </script>
 </body>
