@@ -30,12 +30,18 @@ main {
         padding-right: 10px;
     }
 
+    .carousel-data{
+        font-size: x-small;
+    }
+
     .carousel-data .city , .carousel-data .deity{
         display: none;
     }
 
     .container {
         padding-left: 10px;
+        gap: 10px;
+        padding: 10px;
     }
 }
 
